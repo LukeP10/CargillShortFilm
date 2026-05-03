@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP — customized for fictional film use
+	html5up.net | @ajlkn
+-->
+<html lang="en">
+	<head>
+		<title>Demolish Cargill Buffalo — In Memory of Robert Zimmerman</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Fictional campaign page — part of a short film. Not affiliated with any real organization or event." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Film page additions — keeps Story template, adds petition + fundraiser UI */
+			.petition-block {
+				max-width: 36rem;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: left;
+			}
+			.petition-progress-wrap {
+				margin: 1.75rem 0 1.25rem;
+			}
+			.petition-progress-track {
+				height: 0.65rem;
+				border-radius: 999px;
+				background: rgba(0, 0, 0, 0.12);
+				overflow: hidden;
+			}
+			.invert .petition-progress-track {
+				background: rgba(255, 255, 255, 0.2);
+			}
+			.petition-progress-fill {
+				height: 100%;
+				width: 68.62%;
+				border-radius: 999px;
+				background: linear-gradient(90deg, #47D3E5, #6ba78c);
+				transition: width 1s ease;
+			}
+			.petition-count {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-top: 0.65rem;
+				font-size: 0.95rem;
+				opacity: 0.9;
+			}
+			.petition-count strong {
+				font-weight: 600;
+				letter-spacing: 0.02em;
+			}
+			.gfm-card {
+				max-width: 32rem;
+				margin: 2rem auto 0;
+				padding: 2rem 2.25rem;
+				border-radius: 0.5rem;
+				text-align: left;
+				background: rgba(0, 0, 0, 0.04);
+				border: 1px solid rgba(0, 0, 0, 0.1);
+			}
+			.invert .gfm-card {
+				background: rgba(255, 255, 255, 0.06);
+				border-color: rgba(255, 255, 255, 0.15);
+			}
+			.gfm-raised {
+				font-size: 2.25rem;
+				font-weight: 400;
+				line-height: 1.1;
+				margin-bottom: 0.35rem;
+			}
+			.gfm-goal {
+				font-size: 0.95rem;
+				opacity: 0.85;
+				margin-bottom: 1.25rem;
+			}
+			.gfm-bar {
+				height: 0.45rem;
+				border-radius: 999px;
+				background: rgba(0, 0, 0, 0.1);
+				overflow: hidden;
+				margin-bottom: 1.25rem;
+			}
+			.invert .gfm-bar {
+				background: rgba(255, 255, 255, 0.15);
+			}
+			.gfm-bar-fill {
+				height: 100%;
+				width: 41%;
+				border-radius: 999px;
+				background: #00b964;
+			}
+			.film-disclaimer {
+				font-size: 0.85rem;
+				opacity: 0.75;
+				max-width: 40rem;
+				margin: 1rem auto 0;
+				line-height: 1.5;
+			}
+			.eulogy-lead {
+				font-style: italic;
+				opacity: 0.9;
+				margin-bottom: 1.25rem;
+			}
+
+			/* Hero: softer “slab” — translucent panel over full-bleed image (landscape / side-by-side) */
+			#wrapper > section.banner.style1.film-hero {
+				position: relative;
+			}
+			#wrapper > section.banner.style1.film-hero .image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+			}
+			#wrapper > section.banner.style1.film-hero .content {
+				position: relative;
+				z-index: 1;
+				flex-grow: 0;
+				flex-shrink: 0;
+				width: 50%;
+				max-width: 48rem;
+				margin-right: auto;
+				background: rgba(255, 255, 255, 0.68);
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+			}
+			@media screen and (orientation: portrait) {
+				#wrapper > section.banner.style1.film-hero .image {
+					position: relative;
+					width: 100%;
+					max-width: 100%;
+					height: 45vh;
+					z-index: auto;
+				}
+				#wrapper > section.banner.style1.film-hero.fullscreen .image {
+					height: 50vh;
+				}
+				#wrapper > section.banner.style1.film-hero .content {
+					width: 100%;
+					max-width: 100%;
+					margin-right: 0;
+					flex-grow: 1;
+					background: rgba(255, 255, 255, 0.82);
+					backdrop-filter: none;
+					-webkit-backdrop-filter: none;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<div id="wrapper" class="divided">
+
+				<!-- Hero -->
+					<section class="banner style1 film-hero orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Help Us Demolish Cargill</h1>
+							<p class="major">Buffalo’s waterfront deserves a future without the rusting grain elevator on the Outer Harbor. This community campaign honors those we’ve lost—and demands the site be cleared for good.</p>
+							<ul class="actions stacked">
+								<li><a href="#eulogy" class="button big wide smooth-scroll-middle">Read Robert's story</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="c3.jpg" alt="Grain elevator or Buffalo waterfront " />
+						</div>
+					</section>
+
+				<!-- Eulogy -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in invert color1" id="eulogy">
+						<div class="content">
+							<h2>In memory of Robert Zimmerman</h2>
+							<p class="eulogy-lead">Mach 3, 2004 — March 11, 2026</p>
+							<p>Rob was twenty-two, and beloved by his community. Whether it was late July nights drinking on Allen Street watching the Yankees, late shifts at the 7-11 on Elmwood, or his signature red jacket, you knew Rob.</p>
+							<p>On a summer night at the old Cargill grain elevator, Rob sadly decide to trespass and climb to the top. This proved to be fatal breaking the hearts of all who knew him. Rest easy Rob, it wasn't your fault for climbing a structure people have been climbing for decades.</p>
+							<p>This page is in honor of Rob.</p>
+						</div>
+						<div class="image">
+							<img src="D.JPEG" alt="Morgan" />
+						</div>
+					</section>
+
+				<!-- Why demolish -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in invert color1" id="why-demolish">
+						<div class="content">
+							<h2>Why Cargill has to go</h2>
+							<p>The Buffalo River grain elevator is a monument to twentieth-century industry, and to neglect. Decades of weather, salt, air, and deferred maintenance have turned catwalks and silo caps into hazards. Just putting up “No trespassing” signs is not a safety plan.</p>
+							<p>The structure blocks meaningful public use of the Outer Harbor, casts a long shadow over redevelopment talks, and stands as a daily reminder of the worst night this community has faced in years. Demolition is not erasure, it’s accountability.</p>
+							<p>We’re asking elected officials and the property’s stakeholders to fund a controlled takedown, environmental remediation, and a transparent community process for what comes next—parkland, memorial space, or housing, decided by people who live here.</p>
+						</div>
+						<div class="image">
+							<img src="cS.jpeg" alt="structure detail, skyline, or protest still" />
+						</div>
+					</section>
+
+				<!-- Petition -->
+					<section class="wrapper style1 align-center invert color1" id="petition">
+						<div class="inner medium">
+							<h2>Sign the petition</h2>
+							<p>Join neighbors calling for the immediate demolition and remediation of the Cargill grain elevator site. Add your name—we’ll deliver signatures to city and state representatives.</p>
+
+							<div class="petition-block">
+								<div class="petition-progress-wrap">
+									<div class="petition-progress-track">
+										<div class="petition-progress-fill" role="progressbar" aria-valuenow="30879" aria-valuemin="0" aria-valuemax="45000" aria-label="Petition signatures"></div>
+									</div>
+									<div class="petition-count">
+										<span><strong>30,879</strong> signatures</span>
+										<span>Goal: <strong>45,000</strong></span>
+									</div>
+								</div>
+
+								<form method="post" action="#" id="petition-form">
+									<div class="fields">
+										<div class="field half">
+											<label for="petition-name">Full name</label>
+											<input type="text" name="name" id="petition-name" value="" placeholder="Jane Doe" autocomplete="name" />
+										</div>
+										<div class="field half">
+											<label for="petition-email">Email</label>
+											<input type="email" name="email" id="petition-email" value="" placeholder="you@example.com" autocomplete="email" />
+										</div>
+										<div class="field">
+											<label for="petition-zip">ZIP code (optional)</label>
+											<input type="text" name="zip" id="petition-zip" value="" placeholder="14201" inputmode="numeric" />
+										</div>
+									</div>
+									<ul class="actions special">
+										<li><input type="submit" name="submit" id="petition-submit" value="Add my name" /></li>
+									</ul>
+								</form>
+							</div>
+						</div>
+					</section>
+
+				<!-- GoFundMe -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="gofundme">
+						<div class="content">
+							<h2>Support the Ellis family</h2>
+							<p>Rob’s parents are facing funeral costs, time away from work, and legal help to push for answers about how an abandoned industrial site stayed accessible for this long. Every dollar eases the burden.</p>
+							<div class="gfm-card">
+								<div class="gfm-raised">$18,420 raised</div>
+								<div class="gfm-goal">of $45,000 goal · 1,204 donations</div>
+								<div class="gfm-bar"><div class="gfm-bar-fill"></div></div>
+								<ul class="actions stacked">
+									<li><a href="#" class="button primary large wide">Donate now</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="image">
+							<img src="family.JPG" alt="Replace: family photo or memorial still" />
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>&copy; HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			(function () {
+				var form = document.getElementById('petition-form');
+				if (form) {
+					form.addEventListener('submit', function (e) {
+						e.preventDefault();
+					});
+				}
+			})();
+		</script>
+
+	</body>
+</html>
